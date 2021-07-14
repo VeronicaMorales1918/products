@@ -1,0 +1,4 @@
+development:
+  DB_NAME: "tasks"
+  DB_PASS: "243506"
+  DB_USER: "vero"

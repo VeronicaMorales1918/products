@@ -1,0 +1,25 @@
+<div class="col-12 space mobile">
+</div>
+<div class="col-3 mobile"></div>
+<div class="col-1 mobile"></div>
+
+<div id="session" class="card back-login col-3 " data-login="true">
+    <div id="body" class="card-body">
+        <div id="title" class="row d-fex justify-content-center">
+        </div>
+        <div>
+            <p class="title_login">Ingresa </p>
+            <p class="title_login">a tu cuenta</p>
+        </div>
+        <%= form_tag '/login' do %>
+            <%= text_field_tag :email, placeholder: "Correo"%>
+            <%= password_field_tag :password, nil, placeholder: "Contraseña" %>
+
+            <div class="col-12 d-flex justify-content-center f-direccion">
+               <%= button_tag 'login' %>
+            </div>
+        <% end %>
+    </div>
+</div>
+<div class="col-1 mobile"></div>
+<div class="col-3 mobile"></div>

@@ -1,0 +1,22 @@
+<%= form_with(model: answer_comment) do |form| %>
+  <% if answer_comment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(answer_comment.errors.count, "error") %> prohibited this answer_comment from being saved:</h2>
+
+      <ul>
+        <% answer_comment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :answer %>
+    <%= form.text_field :answer %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
